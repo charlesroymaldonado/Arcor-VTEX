@@ -1,0 +1,416 @@
+[
+  {
+    "name": "email",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "id",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "accountId",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "accountName",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "approved",
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "description": null
+  },
+  {
+    "name": "attach",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "auto_filter",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "birthDate",
+    "mode": "NULLABLE",
+    "type": "TIMESTAMP",
+    "description": null
+  },
+  {
+    "name": "birthDateMonth",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": null
+  },
+  {
+    "name": "businessPhone",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster1",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster10",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster2",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster3",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster4",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster5",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster6",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster7",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster8",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster9",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "cluster_test",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "corporateDocument",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "corporateName",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "country",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "createdBy",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "createdIn",
+    "mode": "NULLABLE",
+    "type": "TIMESTAMP",
+    "description": null
+  },
+  {
+    "name": "customerClass",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "dataEntityId",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "delete",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "discountRate",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "document",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "documentType",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "firstName",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "followers",
+    "mode": "REPEATED",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "formattedPhone",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "gender",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "homePhone",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "idPDV",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "is18",
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "description": null
+  },
+  {
+    "name": "isCorporate",
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "description": null
+  },
+  {
+    "name": "isNewsletterOptIn",
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "description": null
+  },
+  {
+    "name": "lastInteractionBy",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "lastInteractionIn",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "lastName",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "localeDefault",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "newPromo",
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "description": null
+  },
+  {
+    "name": "nonce",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": null
+  },
+  {
+    "name": "phone",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "priceTables",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "productClusterIds",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "profilePicture",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "promotions",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "rclastcart",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "rclastcartvalue",
+    "mode": "NULLABLE",
+    "type": "FLOAT",
+    "description": null
+  },
+  {
+    "name": "rclastsession",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "rclastsessiondate",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "sellers",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "showPriceWithTax",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "stateRegistration",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "tags",
+    "mode": "REPEATED",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "termsAndConditions",
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "description": null
+  },
+  {
+    "name": "token",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "tokinPoints",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "tradeName",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "update",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "updatedBy",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "updatedIn",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "userId",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": null
+  },
+  {
+    "name": "userRegistration",
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "description": null
+  }
+]

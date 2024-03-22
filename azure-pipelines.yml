@@ -1,0 +1,83 @@
+name: $(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+
+resources:
+  repositories:
+  - repository: arcor-bi-etl-pipeline
+    type: github
+    endpoint: AR-BAS-TEAM-CES
+    name: AR-BAS-TEAM-CES/arcor-bi-etl-pipeline
+    ref: arcor-bi-etl-prodv2
+  - repository: arcor-bi-etl-functions
+    type: github
+    endpoint: AR-BAS-TEAM-CES
+    name: AR-BAS-TEAM-CES/arcor-bi-etl-functions
+    ref: arcor-bi-etl-funcs-prodv2
+
+trigger:
+- arcor-bi-etl-prodv2
+- arcor-br-etl-funcs-prodv2
+
+pool:
+  vmImage: ubuntu-22.04
+
+steps:
+- checkout: arcor-bi-etl-pipeline
+- checkout: arcor-bi-etl-functions
+- task: TerraformInstaller@0
+  displayName: 'Install Terraform 1.1.0'
+  inputs:
+    terraformVersion: 1.1.0
+
+- script: |
+   #MOVE FILES TO FIXED DIR DUE TERRAFORM PLAN ISSUE
+   cd $(Build.SourcesDirectory)/arcor-bi-etl-pipeline
+   mkdir $(Agent.Workfolder)/arcor-bi-etl-pipeline
+   cp *.tf $(Agent.Workfolder)/arcor-bi-etl-pipeline/
+   cp *.tfvars $(Agent.Workfolder)/arcor-bi-etl-pipeline/
+   mv terraform_arcor_md_iac $(Agent.Workfolder)/arcor-bi-etl-pipeline/
+   mv terraform_arcor_orders_iac $(Agent.Workfolder)/arcor-bi-etl-pipeline/
+   mv terraform_common_iac $(Agent.Workfolder)/arcor-bi-etl-pipeline/
+   mv $(Build.SourcesDirectory)/arcor-bi-etl-functions $(Agent.Workfolder)/arcor-bi-etl-pipeline/
+   mv $(Agent.Workfolder)/arcor-bi-etl-pipeline/arcor-bi-etl-functions $(Agent.Workfolder)/arcor-bi-etl-pipeline/orders_fnc_repo 
+   rm -rf $(Agent.Workfolder)/arcor-bi-etl-pipeline/orders_fnc_repo/.git
+   cd $(Agent.Workfolder)/arcor-bi-etl-pipeline/
+   
+  displayName: 'Organizing files'
+
+- script: |
+   #GENERATE CREDS
+   echo "$(arcor-bi-etl-prod)" > base64_cred.txt
+   base64 -d --ignore-garbage base64_cred.txt  > /tmp/creds.json
+   cd $(Agent.Workfolder)/arcor-bi-etl-pipeline/
+   
+   #DO INIT
+   terraform init -var-file="prod.tfvars" --backend-config="credentials=/tmp/creds.json" --backend-config="bucket=$(bucket)" --backend-config="prefix=$(bucket_prefix)" -input=false -no-color
+  displayName: 'Terraform init'
+
+- script: |
+   #ENTER DIR
+   cd $(Agent.Workfolder)/arcor-bi-etl-pipeline/
+   #DO INIT
+   terraform validate -no-color
+  displayName: 'Terraform validate'
+
+- script: |
+   #ENTER DIR
+   cd $(Agent.Workfolder)/arcor-bi-etl-pipeline/
+   #DO INIT
+   terraform plan -var-file="prod.tfvars" -input=false -out=tfplan-arcor-bi-etl-prod -no-color 
+  displayName: 'Terraform plan'
+
+- task: ArchiveFiles@2
+  displayName: 'Archive Plan for Artifacts'
+  inputs:
+    rootFolderOrFile: '$(Agent.Workfolder)/arcor-bi-etl-pipeline/'
+    includeRootFolder: false
+    archiveType: tar
+    archiveFile: '$(Build.SourcesDirectory)/$(Build.BuildId)-tfplan-arcor-bi-etl-prod.tgz'
+
+- task: PublishPipelineArtifact@1
+  displayName: 'Publish Pipeline Artifact'
+  inputs:
+    targetPath: '$(Build.SourcesDirectory)/$(Build.BuildId)-tfplan-arcor-bi-etl-prod.tgz'
+    artifact: '$(Build.BuildId)-tfplan-arcor-bi-etl-prod.tgz'

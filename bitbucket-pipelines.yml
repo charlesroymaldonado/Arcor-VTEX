@@ -1,0 +1,11 @@
+pipelines:
+  default:
+    - step:
+        name: Sync GitHub Mirror
+        image: alpine/git:latest
+        clone:
+          enabled: false
+        script:
+          - git clone --bare git@bitbucket.org:exeo-arcor/arcor_terraform_iac.git
+          - cd arcor_terraform_iac.git
+          - git push --mirror git@github.com:AR-BAS-SOLDIG-INNOVACION/arcor_terraform_iac.git

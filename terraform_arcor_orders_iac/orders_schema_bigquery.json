@@ -1,0 +1,525 @@
+[
+    {
+        "name": "orderId",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "sequence",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "marketplaceOrderId",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "marketplaceServicesEndpoint",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "merchantName",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "orderGroup",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "origin",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "salesChannel",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "sellerOrderId",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "status",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "statusDescription",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "value",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "affiliateId",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "partitionDate",
+        "type": "DATE",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "creationDate",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "lastChange",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "totals",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "id",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "value",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "items",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+            {
+                "name": "additionalInfo",
+                "type": "RECORD",
+                "mode": "NULLABLE",
+                "fields": [
+                    {
+                        "name": "brandId",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "brandName",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "categories",
+                        "type": "RECORD",
+                        "mode": "REPEATED",
+                        "fields": [
+                            {
+                                "name": "id",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "name",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "categoriesIds",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "commercialConditionId",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "dimension",
+                        "type": "RECORD",
+                        "mode": "NULLABLE",
+                        "fields": [
+                            {
+                                "name": "cubicweight",
+                                "type": "FLOAT",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "height",
+                                "type": "FLOAT",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "length",
+                                "type": "FLOAT",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "weight",
+                                "type": "FLOAT",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "width",
+                                "type": "FLOAT",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "offeringInfo",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "offeringType",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "offeringTypeId",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "productClusterId",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "assemblies",
+                "type": "STRING",
+                "mode": "REPEATED"
+            },
+            {
+                "name": "attachments",
+                "type": "STRING",
+                "mode": "REPEATED"
+            },
+            {
+                "name": "attachmentOfferings",
+                "type": "STRING",
+                "mode": "REPEATED"
+            },
+            {
+                "name": "bundleItems",
+                "type": "STRING",
+                "mode": "REPEATED"
+            },
+            {
+                "name": "callCenterOperator",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "commission",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "components",
+                "type": "STRING",
+                "mode": "REPEATED"
+            },
+            {
+                "name": "costPrice",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "detailUrl",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "ean",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "freightCommission",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "id",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "imageUrl",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "isGift",
+                "type": "BOOLEAN",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "itemAttachment",
+                "type": "RECORD",
+                "mode": "NULLABLE",
+                "fields": [
+                    {
+                        "name": "content",
+                        "type": "RECORD",
+                        "mode": "NULLABLE",
+                        "fields": [
+                            {
+                                "name": "__unknown__",
+                                "type": "STRING",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "listPrice",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "lockId",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "manualPrice",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "measurementUnit",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "name",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "offerings",
+                "type": "STRING",
+                "mode": "REPEATED"
+            },
+            {
+                "name": "params",
+                "type": "STRING",
+                "mode": "REPEATED"
+            },
+            {
+                "name": "parentAssemblyBinding",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "parentItemIndex",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "preSaleDate",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "price",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "priceDefinition",
+                "type": "RECORD",
+                "mode": "NULLABLE",
+                "fields": [
+                    {
+                        "name": "calculatedSellingPrice",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "sellingPrices",
+                        "type": "RECORD",
+                        "mode": "REPEATED",
+                        "fields": [
+                            {
+                                "name": "quantity",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            },
+                            {
+                                "name": "value",
+                                "type": "INTEGER",
+                                "mode": "NULLABLE"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "total",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "priceTags",
+                "type": "RECORD",
+                "mode": "REPEATED",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "value",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "isPercentual",
+                        "type": "BOOLEAN",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "identifier",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "rawValue",
+                        "type": "FLOAT",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "rate",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "jurisCode",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "jurisType",
+                        "type": "INTEGER",
+                        "mode": "NULLABLE"
+                    },
+                    {
+                        "name": "jurisName",
+                        "type": "STRING",
+                        "mode": "NULLABLE"
+                    }
+                ]
+            },
+            {
+                "name": "priceValidUntil",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "productId",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "quantity",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "refId",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "rewardValue",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "seller",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "sellerSku",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "sellingPrice",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "serialNumbers",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "shippingPrice",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "tax",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "taxCode",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "uniqueId",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "unitMultiplier",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "clientProfileData",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "email",
+                "type": "STRING",
+                "mode": "NULLABLE"
+            }
+        ]
+    }
+  
+]

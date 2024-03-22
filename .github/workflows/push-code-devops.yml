@@ -1,0 +1,31 @@
+name: Push Code to Remote Branch
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Set up Git
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git remote add devops "git@github.com:AR-BAS-TEAM-CES/arcor-bi-etl-pipeline.git"
+
+      - name: Push changes
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY_ARCOR_BI_ETL }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "${SSH_PRIVATE_KEY}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          git fetch --unshallow origin
+          git push devops master:arcor-bi-etl-prodv2 --force

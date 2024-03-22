@@ -1,0 +1,1610 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderId": {
+      "type": "string"
+    },
+    "sequence": {
+      "type": "string"
+    },
+    "marketplaceOrderId": {
+      "type": "string"
+    },
+    "marketplaceServicesEndpoint": {
+      "type": "string"
+    },
+    "sellerOrderId": {
+      "type": "null"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "affiliateId": {
+      "type": "string"
+    },
+    "salesChannel": {
+      "type": "string"
+    },
+    "merchantName": {
+      "type": "null"
+    },
+    "status": {
+      "type": "string"
+    },
+    "statusDescription": {
+      "type": "string"
+    },
+    "value": {
+      "type": "integer"
+    },
+    "creationDate": {
+      "type": "string"
+    },
+    "lastChange": {
+      "type": "string"
+    },
+    "orderGroup": {
+      "type": "null"
+    },
+    "totals": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "value"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "value"
+          ]
+        }
+      ]
+    },
+    "items": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "uniqueId": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "productId": {
+              "type": "string"
+            },
+            "ean": {
+              "type": "null"
+            },
+            "lockId": {
+              "type": "string"
+            },
+            "itemAttachment": {
+              "type": "object",
+              "properties": {
+                "content": {
+                  "type": "object"
+                },
+                "name": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "content",
+                "name"
+              ]
+            },
+            "attachments": {
+              "type": "array",
+              "items": {}
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "seller": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "refId": {
+              "type": "string"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "listPrice": {
+              "type": "integer"
+            },
+            "manualPrice": {
+              "type": "null"
+            },
+            "priceTags": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    },
+                    "isPercentual": {
+                      "type": "boolean"
+                    },
+                    "identifier": {
+                      "type": "string"
+                    },
+                    "rawValue": {
+                      "type": "number"
+                    },
+                    "rate": {
+                      "type": "integer"
+                    },
+                    "jurisCode": {
+                      "type": "integer"
+                    },
+                    "jurisType": {
+                      "type": "integer"
+                    },
+                    "jurisName": {
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "imageUrl": {
+              "type": "string"
+            },
+            "detailUrl": {
+              "type": "null"
+            },
+            "components": {
+              "type": "array",
+              "items": {}
+            },
+            "bundleItems": {
+              "type": "array",
+              "items": {}
+            },
+            "params": {
+              "type": "array",
+              "items": {}
+            },
+            "offerings": {
+              "type": "array",
+              "items": {}
+            },
+            "sellerSku": {
+              "type": "string"
+            },
+            "priceValidUntil": {
+              "type": "null"
+            },
+            "commission": {
+              "type": "integer"
+            },
+            "tax": {
+              "type": "integer"
+            },
+            "preSaleDate": {
+              "type": "string"
+            },
+            "additionalInfo": {
+              "type": "object",
+              "properties": {
+                "brandName": {
+                  "type": "string"
+                },
+                "brandId": {
+                  "type": "string"
+                },
+                "categoriesIds": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ]
+                    }
+                  ]
+                },
+                "productClusterId": {
+                  "type": "string"
+                },
+                "commercialConditionId": {
+                  "type": "string"
+                },
+                "dimension": {
+                  "type": "object",
+                  "properties": {
+                    "cubicweight": {
+                      "type": "number"
+                    },
+                    "height": {
+                      "type": "number"
+                    },
+                    "length": {
+                      "type": "number"
+                    },
+                    "weight": {
+                      "type": "number"
+                    },
+                    "width": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "cubicweight",
+                    "height",
+                    "length",
+                    "weight",
+                    "width"
+                  ]
+                },
+                "offeringInfo": {
+                  "type": "null"
+                },
+                "offeringType": {
+                  "type": "null"
+                },
+                "offeringTypeId": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "brandName",
+                "brandId",
+                "categoriesIds",
+                "categories",
+                "productClusterId",
+                "commercialConditionId",
+                "dimension",
+                "offeringInfo",
+                "offeringType",
+                "offeringTypeId"
+              ]
+            },
+            "measurementUnit": {
+              "type": "string"
+            },
+            "unitMultiplier": {
+              "type": "number"
+            },
+            "sellingPrice": {
+              "type": "integer"
+            },
+            "isGift": {
+              "type": "boolean"
+            },
+            "shippingPrice": {
+              "type": "null"
+            },
+            "rewardValue": {
+              "type": "integer"
+            },
+            "freightCommission": {
+              "type": "integer"
+            },
+            "priceDefinition": {
+              "type": "object",
+              "properties": {
+                "sellingPrices": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "integer"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "value",
+                        "quantity"
+                      ]
+                    }
+                  ]
+                },
+                "calculatedSellingPrice": {
+                  "type": "integer"
+                },
+                "total": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "sellingPrices",
+                "calculatedSellingPrice",
+                "total"
+              ]
+            },
+            "taxCode": {
+              "type": "null"
+            },
+            "parentItemIndex": {
+              "type": "null"
+            },
+            "parentAssemblyBinding": {
+              "type": "null"
+            },
+            "callCenterOperator": {
+              "type": "null"
+            },
+            "serialNumbers": {
+              "type": "null"
+            },
+            "assemblies": {
+              "type": "array",
+              "items": {}
+            },
+            "costPrice": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "uniqueId",
+            "id",
+            "productId",
+            "ean",
+            "lockId",
+            "itemAttachment",
+            "attachments",
+            "quantity",
+            "seller",
+            "name",
+            "refId",
+            "price",
+            "listPrice",
+            "manualPrice",
+            "priceTags",
+            "imageUrl",
+            "detailUrl",
+            "components",
+            "bundleItems",
+            "params",
+            "offerings",
+            "sellerSku",
+            "priceValidUntil",
+            "commission",
+            "tax",
+            "preSaleDate",
+            "additionalInfo",
+            "measurementUnit",
+            "unitMultiplier",
+            "sellingPrice",
+            "isGift",
+            "shippingPrice",
+            "rewardValue",
+            "freightCommission",
+            "priceDefinition",
+            "taxCode",
+            "parentItemIndex",
+            "parentAssemblyBinding",
+            "callCenterOperator",
+            "serialNumbers",
+            "assemblies",
+            "costPrice"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "uniqueId": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "productId": {
+              "type": "string"
+            },
+            "ean": {
+              "type": "null"
+            },
+            "lockId": {
+              "type": "string"
+            },
+            "itemAttachment": {
+              "type": "object",
+              "properties": {
+                "content": {
+                  "type": "object"
+                },
+                "name": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "content",
+                "name"
+              ]
+            },
+            "attachments": {
+              "type": "array",
+              "items": {}
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "seller": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "refId": {
+              "type": "string"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "listPrice": {
+              "type": "integer"
+            },
+            "manualPrice": {
+              "type": "null"
+            },
+            "priceTags": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    },
+                    "isPercentual": {
+                      "type": "boolean"
+                    },
+                    "identifier": {
+                      "type": "string"
+                    },
+                    "rawValue": {
+                      "type": "number"
+                    },
+                    "rate": {
+                      "type": "integer"
+                    },
+                    "jurisCode": {
+                      "type": "integer"
+                    },
+                    "jurisType": {
+                      "type": "integer"
+                    },
+                    "jurisName": {
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "imageUrl": {
+              "type": "string"
+            },
+            "detailUrl": {
+              "type": "null"
+            },
+            "components": {
+              "type": "array",
+              "items": {}
+            },
+            "bundleItems": {
+              "type": "array",
+              "items": {}
+            },
+            "params": {
+              "type": "array",
+              "items": {}
+            },
+            "offerings": {
+              "type": "array",
+              "items": {}
+            },
+            "sellerSku": {
+              "type": "string"
+            },
+            "priceValidUntil": {
+              "type": "null"
+            },
+            "commission": {
+              "type": "integer"
+            },
+            "tax": {
+              "type": "integer"
+            },
+            "preSaleDate": {
+              "type": "string"
+            },
+            "additionalInfo": {
+              "type": "object",
+              "properties": {
+                "brandName": {
+                  "type": "string"
+                },
+                "brandId": {
+                  "type": "string"
+                },
+                "categoriesIds": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ]
+                    }
+                  ]
+                },
+                "productClusterId": {
+                  "type": "string"
+                },
+                "commercialConditionId": {
+                  "type": "string"
+                },
+                "dimension": {
+                  "type": "object",
+                  "properties": {
+                    "cubicweight": {
+                      "type": "number"
+                    },
+                    "height": {
+                      "type": "number"
+                    },
+                    "length": {
+                      "type": "number"
+                    },
+                    "weight": {
+                      "type": "number"
+                    },
+                    "width": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "cubicweight",
+                    "height",
+                    "length",
+                    "weight",
+                    "width"
+                  ]
+                },
+                "offeringInfo": {
+                  "type": "null"
+                },
+                "offeringType": {
+                  "type": "null"
+                },
+                "offeringTypeId": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "brandName",
+                "brandId",
+                "categoriesIds",
+                "categories",
+                "productClusterId",
+                "commercialConditionId",
+                "dimension",
+                "offeringInfo",
+                "offeringType",
+                "offeringTypeId"
+              ]
+            },
+            "measurementUnit": {
+              "type": "string"
+            },
+            "unitMultiplier": {
+              "type": "number"
+            },
+            "sellingPrice": {
+              "type": "integer"
+            },
+            "isGift": {
+              "type": "boolean"
+            },
+            "shippingPrice": {
+              "type": "null"
+            },
+            "rewardValue": {
+              "type": "integer"
+            },
+            "freightCommission": {
+              "type": "integer"
+            },
+            "priceDefinition": {
+              "type": "object",
+              "properties": {
+                "sellingPrices": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "integer"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "value",
+                        "quantity"
+                      ]
+                    }
+                  ]
+                },
+                "calculatedSellingPrice": {
+                  "type": "integer"
+                },
+                "total": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "sellingPrices",
+                "calculatedSellingPrice",
+                "total"
+              ]
+            },
+            "taxCode": {
+              "type": "null"
+            },
+            "parentItemIndex": {
+              "type": "null"
+            },
+            "parentAssemblyBinding": {
+              "type": "null"
+            },
+            "callCenterOperator": {
+              "type": "null"
+            },
+            "serialNumbers": {
+              "type": "null"
+            },
+            "assemblies": {
+              "type": "array",
+              "items": {}
+            },
+            "costPrice": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "uniqueId",
+            "id",
+            "productId",
+            "ean",
+            "lockId",
+            "itemAttachment",
+            "attachments",
+            "quantity",
+            "seller",
+            "name",
+            "refId",
+            "price",
+            "listPrice",
+            "manualPrice",
+            "priceTags",
+            "imageUrl",
+            "detailUrl",
+            "components",
+            "bundleItems",
+            "params",
+            "offerings",
+            "sellerSku",
+            "priceValidUntil",
+            "commission",
+            "tax",
+            "preSaleDate",
+            "additionalInfo",
+            "measurementUnit",
+            "unitMultiplier",
+            "sellingPrice",
+            "isGift",
+            "shippingPrice",
+            "rewardValue",
+            "freightCommission",
+            "priceDefinition",
+            "taxCode",
+            "parentItemIndex",
+            "parentAssemblyBinding",
+            "callCenterOperator",
+            "serialNumbers",
+            "assemblies",
+            "costPrice"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "uniqueId": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "productId": {
+              "type": "string"
+            },
+            "ean": {
+              "type": "null"
+            },
+            "lockId": {
+              "type": "string"
+            },
+            "itemAttachment": {
+              "type": "object",
+              "properties": {
+                "content": {
+                  "type": "object"
+                },
+                "name": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "content",
+                "name"
+              ]
+            },
+            "attachments": {
+              "type": "array",
+              "items": {}
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "seller": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "refId": {
+              "type": "string"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "listPrice": {
+              "type": "integer"
+            },
+            "manualPrice": {
+              "type": "null"
+            },
+            "priceTags": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    },
+                    "isPercentual": {
+                      "type": "boolean"
+                    },
+                    "identifier": {
+                      "type": "string"
+                    },
+                    "rawValue": {
+                      "type": "number"
+                    },
+                    "rate": {
+                      "type": "integer"
+                    },
+                    "jurisCode": {
+                      "type": "integer"
+                    },
+                    "jurisType": {
+                      "type": "integer"
+                    },
+                    "jurisName": {
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "imageUrl": {
+              "type": "string"
+            },
+            "detailUrl": {
+              "type": "null"
+            },
+            "components": {
+              "type": "array",
+              "items": {}
+            },
+            "bundleItems": {
+              "type": "array",
+              "items": {}
+            },
+            "params": {
+              "type": "array",
+              "items": {}
+            },
+            "offerings": {
+              "type": "array",
+              "items": {}
+            },
+            "sellerSku": {
+              "type": "string"
+            },
+            "priceValidUntil": {
+              "type": "null"
+            },
+            "commission": {
+              "type": "integer"
+            },
+            "tax": {
+              "type": "integer"
+            },
+            "preSaleDate": {
+              "type": "string"
+            },
+            "additionalInfo": {
+              "type": "object",
+              "properties": {
+                "brandName": {
+                  "type": "string"
+                },
+                "brandId": {
+                  "type": "string"
+                },
+                "categoriesIds": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ]
+                    }
+                  ]
+                },
+                "productClusterId": {
+                  "type": "string"
+                },
+                "commercialConditionId": {
+                  "type": "string"
+                },
+                "dimension": {
+                  "type": "object",
+                  "properties": {
+                    "cubicweight": {
+                      "type": "number"
+                    },
+                    "height": {
+                      "type": "number"
+                    },
+                    "length": {
+                      "type": "number"
+                    },
+                    "weight": {
+                      "type": "number"
+                    },
+                    "width": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "cubicweight",
+                    "height",
+                    "length",
+                    "weight",
+                    "width"
+                  ]
+                },
+                "offeringInfo": {
+                  "type": "null"
+                },
+                "offeringType": {
+                  "type": "null"
+                },
+                "offeringTypeId": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "brandName",
+                "brandId",
+                "categoriesIds",
+                "categories",
+                "productClusterId",
+                "commercialConditionId",
+                "dimension",
+                "offeringInfo",
+                "offeringType",
+                "offeringTypeId"
+              ]
+            },
+            "measurementUnit": {
+              "type": "string"
+            },
+            "unitMultiplier": {
+              "type": "number"
+            },
+            "sellingPrice": {
+              "type": "integer"
+            },
+            "isGift": {
+              "type": "boolean"
+            },
+            "shippingPrice": {
+              "type": "null"
+            },
+            "rewardValue": {
+              "type": "integer"
+            },
+            "freightCommission": {
+              "type": "integer"
+            },
+            "priceDefinition": {
+              "type": "object",
+              "properties": {
+                "sellingPrices": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "integer"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "value",
+                        "quantity"
+                      ]
+                    }
+                  ]
+                },
+                "calculatedSellingPrice": {
+                  "type": "integer"
+                },
+                "total": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "sellingPrices",
+                "calculatedSellingPrice",
+                "total"
+              ]
+            },
+            "taxCode": {
+              "type": "null"
+            },
+            "parentItemIndex": {
+              "type": "null"
+            },
+            "parentAssemblyBinding": {
+              "type": "null"
+            },
+            "callCenterOperator": {
+              "type": "null"
+            },
+            "serialNumbers": {
+              "type": "null"
+            },
+            "assemblies": {
+              "type": "array",
+              "items": {}
+            },
+            "costPrice": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "uniqueId",
+            "id",
+            "productId",
+            "ean",
+            "lockId",
+            "itemAttachment",
+            "attachments",
+            "quantity",
+            "seller",
+            "name",
+            "refId",
+            "price",
+            "listPrice",
+            "manualPrice",
+            "priceTags",
+            "imageUrl",
+            "detailUrl",
+            "components",
+            "bundleItems",
+            "params",
+            "offerings",
+            "sellerSku",
+            "priceValidUntil",
+            "commission",
+            "tax",
+            "preSaleDate",
+            "additionalInfo",
+            "measurementUnit",
+            "unitMultiplier",
+            "sellingPrice",
+            "isGift",
+            "shippingPrice",
+            "rewardValue",
+            "freightCommission",
+            "priceDefinition",
+            "taxCode",
+            "parentItemIndex",
+            "parentAssemblyBinding",
+            "callCenterOperator",
+            "serialNumbers",
+            "assemblies",
+            "costPrice"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "uniqueId": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "productId": {
+              "type": "string"
+            },
+            "ean": {
+              "type": "null"
+            },
+            "lockId": {
+              "type": "string"
+            },
+            "itemAttachment": {
+              "type": "object",
+              "properties": {
+                "content": {
+                  "type": "object"
+                },
+                "name": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "content",
+                "name"
+              ]
+            },
+            "attachments": {
+              "type": "array",
+              "items": {}
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "seller": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "refId": {
+              "type": "string"
+            },
+            "price": {
+              "type": "integer"
+            },
+            "listPrice": {
+              "type": "integer"
+            },
+            "manualPrice": {
+              "type": "null"
+            },
+            "priceTags": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    },
+                    "isPercentual": {
+                      "type": "boolean"
+                    },
+                    "identifier": {
+                      "type": "string"
+                    },
+                    "rawValue": {
+                      "type": "number"
+                    },
+                    "rate": {
+                      "type": "integer"
+                    },
+                    "jurisCode": {
+                      "type": "integer"
+                    },
+                    "jurisType": {
+                      "type": "integer"
+                    },
+                    "jurisName": {
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "imageUrl": {
+              "type": "string"
+            },
+            "detailUrl": {
+              "type": "null"
+            },
+            "components": {
+              "type": "array",
+              "items": {}
+            },
+            "bundleItems": {
+              "type": "array",
+              "items": {}
+            },
+            "params": {
+              "type": "array",
+              "items": {}
+            },
+            "offerings": {
+              "type": "array",
+              "items": {}
+            },
+            "sellerSku": {
+              "type": "string"
+            },
+            "priceValidUntil": {
+              "type": "null"
+            },
+            "commission": {
+              "type": "integer"
+            },
+            "tax": {
+              "type": "integer"
+            },
+            "preSaleDate": {
+              "type": "string"
+            },
+            "additionalInfo": {
+              "type": "object",
+              "properties": {
+                "brandName": {
+                  "type": "string"
+                },
+                "brandId": {
+                  "type": "string"
+                },
+                "categoriesIds": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name"
+                      ]
+                    }
+                  ]
+                },
+                "productClusterId": {
+                  "type": "string"
+                },
+                "commercialConditionId": {
+                  "type": "string"
+                },
+                "dimension": {
+                  "type": "object",
+                  "properties": {
+                    "cubicweight": {
+                      "type": "number"
+                    },
+                    "height": {
+                      "type": "number"
+                    },
+                    "length": {
+                      "type": "number"
+                    },
+                    "weight": {
+                      "type": "number"
+                    },
+                    "width": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "cubicweight",
+                    "height",
+                    "length",
+                    "weight",
+                    "width"
+                  ]
+                },
+                "offeringInfo": {
+                  "type": "null"
+                },
+                "offeringType": {
+                  "type": "null"
+                },
+                "offeringTypeId": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "brandName",
+                "brandId",
+                "categoriesIds",
+                "categories",
+                "productClusterId",
+                "commercialConditionId",
+                "dimension",
+                "offeringInfo",
+                "offeringType",
+                "offeringTypeId"
+              ]
+            },
+            "measurementUnit": {
+              "type": "string"
+            },
+            "unitMultiplier": {
+              "type": "number"
+            },
+            "sellingPrice": {
+              "type": "integer"
+            },
+            "isGift": {
+              "type": "boolean"
+            },
+            "shippingPrice": {
+              "type": "null"
+            },
+            "rewardValue": {
+              "type": "integer"
+            },
+            "freightCommission": {
+              "type": "integer"
+            },
+            "priceDefinition": {
+              "type": "object",
+              "properties": {
+                "sellingPrices": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "integer"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "value",
+                        "quantity"
+                      ]
+                    }
+                  ]
+                },
+                "calculatedSellingPrice": {
+                  "type": "integer"
+                },
+                "total": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "sellingPrices",
+                "calculatedSellingPrice",
+                "total"
+              ]
+            },
+            "taxCode": {
+              "type": "null"
+            },
+            "parentItemIndex": {
+              "type": "null"
+            },
+            "parentAssemblyBinding": {
+              "type": "null"
+            },
+            "callCenterOperator": {
+              "type": "null"
+            },
+            "serialNumbers": {
+              "type": "null"
+            },
+            "assemblies": {
+              "type": "array",
+              "items": {}
+            },
+            "costPrice": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "uniqueId",
+            "id",
+            "productId",
+            "ean",
+            "lockId",
+            "itemAttachment",
+            "attachments",
+            "quantity",
+            "seller",
+            "name",
+            "refId",
+            "price",
+            "listPrice",
+            "manualPrice",
+            "priceTags",
+            "imageUrl",
+            "detailUrl",
+            "components",
+            "bundleItems",
+            "params",
+            "offerings",
+            "sellerSku",
+            "priceValidUntil",
+            "commission",
+            "tax",
+            "preSaleDate",
+            "additionalInfo",
+            "measurementUnit",
+            "unitMultiplier",
+            "sellingPrice",
+            "isGift",
+            "shippingPrice",
+            "rewardValue",
+            "freightCommission",
+            "priceDefinition",
+            "taxCode",
+            "parentItemIndex",
+            "parentAssemblyBinding",
+            "callCenterOperator",
+            "serialNumbers",
+            "assemblies",
+            "costPrice"
+          ]
+        }
+      ]
+    },
+
+    "clientProfileData": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        }
+
+      },
+      "required": [
+        "email"
+
+      ]
+    }
+  }
+}
